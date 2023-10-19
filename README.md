@@ -55,3 +55,20 @@ console.log(number);
 Answer 0 2 2. Explanation The postfix unary operator ++:
 ```
 
+6. Question
+```
+function sum(a, b) {
+  return a + b;
+}
+
+sum(1, '2');
+
+Answer: '12'
+```
+
+ 7. Question
+```
+typeof [];
+
+Answer: Object
+```
