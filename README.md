@@ -20,6 +20,8 @@ function sayHi() {
 }
 
 sayHi();
+
+Answer: undefined and ReferenceError 
 ```
 
 3. Question
@@ -31,11 +33,25 @@ function getAge() {
 }
 
 getAge();
+
+Answer: Reference error
 ```
 
 4. Question
 ```
 +true;
 !'Ayush';
+
+Answer: 1 and false
+```
+
+5. Question
+```
+let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
+
+Answer 0 2 2. Explanation The postfix unary operator ++:
 ```
 
