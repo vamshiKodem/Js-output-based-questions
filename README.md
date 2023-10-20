@@ -97,7 +97,7 @@ const shape = {
 console.log(shape.diameter());
 console.log(shape.perimeter());
 
-Answer: 20 and NaN (Arrow function refer to global object where as regular function will refer object to which is called)
+Answer: 20 and NaN (Arrow function refers to a global object whereas regular function will refer object to which is called)
 ```
 10. What's the output?
 ```
@@ -109,4 +109,17 @@ c.greeting = 'Hello';
 console.log(d.greeting);
 
 Answer: Hello (As non-primitive type will assign reference when we assign to other variables)
+```
+
+11. What's the output?
+```
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+Answer: true, false, false 
 ```
