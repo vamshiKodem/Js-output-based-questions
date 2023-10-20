@@ -72,3 +72,15 @@ typeof [];
 
 Answer: Object
 ```
+8. What's the output?
+```
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+
+Answer: 3 3 3 and 0 1 2 (var will create variable which is global to function as let will create new variable for every loop)
+```
