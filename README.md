@@ -123,3 +123,21 @@ console.log(b === c);
 
 Answer: true, false, false 
 ```
+11. What's the output?
+```
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+
+Answer: TypeError ( If we use prototype it will work Person.prototype.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+```
