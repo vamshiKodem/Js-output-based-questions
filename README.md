@@ -84,3 +84,29 @@ for (let i = 0; i < 3; i++) {
 
 Answer: 3 3 3 and 0 1 2 (var will create variable which is global to function as let will create new variable for every loop)
 ```
+9. What's the output?
+```
+const shape = {
+  radius: 10,
+  diameter() {
+    return this.radius * 2;
+  },
+  perimeter: () => 2 * Math.PI * this.radius,
+};
+
+console.log(shape.diameter());
+console.log(shape.perimeter());
+
+Answer: 20 and NaN (Arrow function refer to global object where as regular function will refer object to which is called)
+```
+10. What's the output?
+```
+let c = { greeting: 'Hey!' };
+let d;
+
+d = c;
+c.greeting = 'Hello';
+console.log(d.greeting);
+
+Answer: Hello (As non-primitive type will assign reference when we assign to other variables)
+```
