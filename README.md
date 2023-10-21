@@ -141,3 +141,62 @@ Answer: TypeError ( If we use prototype it will work Person.prototype.getFullNam
   return `${this.firstName} ${this.lastName}`;
 };
 ```
+
+12. What would be the output of the following code?
+```
+console.log(employeeId);
+var employeeId = '19000';
+Answer: undefined
+```
+
+13. What would be the output of following code?
+```
+var employeeId = '1234abe';
+(function(){
+	console.log(employeeId);
+	var employeeId = '122345';
+})();
+
+Answer: undefined
+```
+
+14. What would be the output of following code?
+```
+(function() {
+	console.log(typeof displayFunc);
+	var displayFunc = function(){
+		console.log("Hi I am inside displayFunc");
+	}
+}());
+
+Answer: undefined
+```
+
+15. What would be the output of following code?
+```
+var employeeId = 'abc123';
+function foo(){
+	employeeId = '123bcd';
+	return;
+}
+foo();
+console.log(employeeId);
+
+Answer: 123bcd
+```
+16. What would be the output of following code?
+```
+var employeeId = 'abc123';
+
+function foo() {
+	employeeId();
+	return;
+
+	function employeeId() {
+		console.log(typeof employeeId);
+	}
+}
+foo();
+
+Answer: function
+```
