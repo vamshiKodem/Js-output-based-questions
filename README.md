@@ -200,3 +200,55 @@ foo();
 
 Answer: function
 ```
+
+17. Return a new array with the user of id 2 change the city to new City
+```
+const data = [
+  {
+    id: 0,
+    name: "my name",
+    age: 22,
+    address: [
+      {
+        city: "hyderabad",
+        state: "telangana",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "my name 2",
+    age: 23,
+    address: [
+      {
+        city: "hyderabad 2",
+        state: "telangana 2",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "my name 3",
+    age: 22,
+    address: [
+      {
+        city: "hyderabad 3",
+        state: "telangana 3",
+      },
+    ],
+  },
+];
+
+Answer:
+const newData = data.map((data) => {
+  if (data.id === 2) {
+    return {
+      ...data,
+      address: [{ state: data.address[0].state, city: "my new City" }],
+    };
+  }
+
+  return data;
+});
+
+```
