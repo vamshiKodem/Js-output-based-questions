@@ -247,7 +247,6 @@ const newData = data.map((data) => {
       address: [{ state: data.address[0].state, city: "my new City" }],
     };
   }
-
   return data;
 });
 
