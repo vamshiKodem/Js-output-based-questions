@@ -1,8 +1,10 @@
 # Js-output-based-questions
+
 This repo contains most asked javascript output-based questions
 
 1. Question
-```   
+
+```
 var num = 8;
 var num = 10;
 console.log(num);
@@ -11,6 +13,7 @@ Answer: 10
 ```
 
 2. Question
+
 ```
 function sayHi() {
   console.log(name);
@@ -21,10 +24,11 @@ function sayHi() {
 
 sayHi();
 
-Answer: undefined and ReferenceError 
+Answer: undefined and ReferenceError
 ```
 
 3. Question
+
 ```
 function getAge() {
   'use strict';
@@ -38,6 +42,7 @@ Answer: Reference error
 ```
 
 4. Question
+
 ```
 +true;
 !'Ayush';
@@ -46,6 +51,7 @@ Answer: 1 and false
 ```
 
 5. Question
+
 ```
 let number = 0;
 console.log(number++);
@@ -56,6 +62,7 @@ Answer 0 2 2. Explanation The postfix unary operator ++:
 ```
 
 6. Question
+
 ```
 function sum(a, b) {
   return a + b;
@@ -66,13 +73,16 @@ sum(1, '2');
 Answer: '12'
 ```
 
- 7. Question
+7.  Question
+
 ```
 typeof [];
 
 Answer: Object
 ```
+
 8. What's the output?
+
 ```
 for (var i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 1);
@@ -84,7 +94,9 @@ for (let i = 0; i < 3; i++) {
 
 Answer: 3 3 3 and 0 1 2 (var will create variable which is global to function as let will create new variable for every loop)
 ```
+
 9. What's the output?
+
 ```
 const shape = {
   radius: 10,
@@ -99,7 +111,9 @@ console.log(shape.perimeter());
 
 Answer: 20 and NaN (Arrow function refers to a global object whereas regular function will refer object to which is called)
 ```
+
 10. What's the output?
+
 ```
 let c = { greeting: 'Hey!' };
 let d;
@@ -112,6 +126,7 @@ Answer: Hello (As non-primitive type will assign reference when we assign to oth
 ```
 
 11. What's the output?
+
 ```
 let a = 3;
 let b = new Number(3);
@@ -121,9 +136,11 @@ console.log(a == b);
 console.log(a === b);
 console.log(b === c);
 
-Answer: true, false, false 
+Answer: true, false, false
 ```
+
 11. What's the output?
+
 ```
 function Person(firstName, lastName) {
   this.firstName = firstName;
@@ -143,6 +160,7 @@ Answer: TypeError ( If we use prototype it will work Person.prototype.getFullNam
 ```
 
 12. What would be the output of the following code?
+
 ```
 console.log(employeeId);
 var employeeId = '19000';
@@ -150,6 +168,7 @@ Answer: undefined
 ```
 
 13. What would be the output of following code?
+
 ```
 var employeeId = '1234abe';
 (function(){
@@ -161,6 +180,7 @@ Answer: undefined
 ```
 
 14. What would be the output of following code?
+
 ```
 (function() {
 	console.log(typeof displayFunc);
@@ -173,6 +193,7 @@ Answer: undefined
 ```
 
 15. What would be the output of following code?
+
 ```
 var employeeId = 'abc123';
 function foo(){
@@ -184,7 +205,9 @@ console.log(employeeId);
 
 Answer: 123bcd
 ```
+
 16. What would be the output of following code?
+
 ```
 var employeeId = 'abc123';
 
@@ -202,6 +225,7 @@ Answer: function
 ```
 
 17. Return a new array with the user of id 2 change the city to new City
+
 ```
 const data = [
   {
@@ -250,4 +274,45 @@ const newData = data.map((data) => {
   return data;
 });
 
+```
+
+18. What would be the output of following code?
+
+```
+ const outerFunction = () => {
+    let b = 100;
+    const innerFunction = () => {
+      console.log(b);
+    };
+    b = 10000;
+    return innerFunction;
+  };
+
+  outerFunction()();
+
+Answer: 10000
+```
+
+19. What would be the output of following code?
+
+```
+  for (var i = 1; i <= 5; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, i * 1000);
+  }
+
+  Output: 6 6 6 6 6 6
+```
+
+20. What would be the output of following code?
+
+```
+  for (let i = 1; i <= 5; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, i * 1000);
+  }
+
+  Output: 1 2 3 4 5
 ```
