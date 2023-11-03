@@ -316,3 +316,27 @@ Answer: 10000
 
   Output: 1 2 3 4 5
 ```
+
+21. What would be the output of following code?
+
+```
+  typeof []
+
+  Output: object
+```
+
+22. What would be the output of following code?
+
+```
+  typeof (() => {})
+
+  Output: function
+```
+
+23. What would be the output of following code?
+
+```
+  typeof undefined
+
+  Output: undefined
+```
