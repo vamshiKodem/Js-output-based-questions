@@ -317,7 +317,7 @@ Answer: 10000
   Output: 1 2 3 4 5
 ```
 
-21. What would be the output of following code?
+21. What would be the output of the following code?
 
 ```
   typeof []
@@ -325,7 +325,7 @@ Answer: 10000
   Output: object
 ```
 
-22. What would be the output of following code?
+22. What would be the output of the following code?
 
 ```
   typeof (() => {})
