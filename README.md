@@ -340,3 +340,19 @@ Answer: 10000
 
   Output: undefined
 ```
+
+24. Example of Closure
+```
+  const outerFunc = () => {
+    let a = 100;
+    return  () => {
+      a = 200;
+      console.log(a);
+    }
+  }
+
+  const innerFunc = outerFunc();
+  innerFunc();
+
+It will log 200
+```
