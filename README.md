@@ -356,3 +356,24 @@ Answer: 10000
 
 It will log 200
 ```
+
+25. Whats the output?
+```
+let greeting;
+greetign = {}; // Typo!
+console.log(greetign);
+
+A. {}
+```
+
+26.  What's the output?
+```
+function getAge(...args) {
+  console.log(typeof args);
+}
+getAge(21);
+
+A. Object (typeOf Array is object)
+```
+
+27. 
