@@ -376,4 +376,23 @@ getAge(21);
 A. Object (typeOf Array is object)
 ```
 
-27. 
+27. Whats the output ?
+```
+myFunc();
+var myFunc = function () {
+  console.log("first");
+};
+
+myFunc();
+function myFunc() {
+  console.log("second");
+}
+
+myFunc();
+
+A.
+second
+first
+first
+
+```
