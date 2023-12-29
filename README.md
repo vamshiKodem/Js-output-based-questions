@@ -376,7 +376,7 @@ getAge(21);
 A. Object (typeOf Array is object)
 ```
 
-27. Whats the output ?
+27. What's the output?
 ```
 myFunc();
 var myFunc = function () {
@@ -395,4 +395,40 @@ second
 first
 first
 
+```
+
+28. What's the output?
+```
+var variable = 10;
+
+(() => {
+  console.log(variable);
+  var variable = 20;
+  console.log(variable);
+})();
+
+console.log(variable);
+
+A.
+undefined
+20
+10
+```
+
+29. What's the output?
+```
+var variable = 10;
+
+(() => {
+  console.log(variable);
+  variable = 20;
+  console.log(variable);
+})();
+
+console.log(variable);
+
+A.
+10
+20
+20
 ```
