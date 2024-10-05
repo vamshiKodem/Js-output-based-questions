@@ -432,3 +432,18 @@ A.
 20
 20
 ```
+
+30. whats the output
+```
+const obj = {
+  name: 'vamshi',
+  getName: function(){
+    console.log(this.name);
+  }
+}
+const getNameFunction = obj.getName
+const obj2 = { name: 'krishna', getName: getNameFunction};
+obj2.getName();
+
+output: 'krishna' // as getNameFunction value is function(){console.log(this.name)}
+```
